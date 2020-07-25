@@ -15,8 +15,8 @@ class String
   end
 
   def count_sentences
-    new_array=self.split(/[.?!]/).count#delete if 
-  binding.pry
+    new_array=self.split(/[.?!]/).delete_if 
+  #binding.pry
   end
 end
 #"This, well, is a sentence. This is too!! And so is this, I think? Woo..."
